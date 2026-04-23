@@ -1,13 +1,15 @@
-#
+#在屏幕上显示跑马灯文字
 import os
 import time
 
 def main():
-    content = "hello, world!"
+    text = 'hello everyone!'
     while True:
         os.system('cls')
-        print(content)
-        time.sleep(0.5)
-        content = content[1:]+content[0]
+        print(text)
+        text = text[1:] + text[0]
+        time.sleep(0.2)
 if __name__ == '__main__':
     main()
+
+
